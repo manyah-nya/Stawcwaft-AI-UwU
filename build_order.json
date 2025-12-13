@@ -1,0 +1,123 @@
+{
+    "ZvZ": {
+
+    },
+    "PvZ": {
+
+    },
+    "TvZ": {
+
+    },
+    "ZvR": [
+        {
+            "Title": "PIG Ling/Bane 2023.",
+            "Description": "Build viable against any race.",
+            "Build": [
+                { 
+                    "ETAs": 13, "Note": "", "Supply": 13,
+                    "Action": "spawn_overlord"
+                },
+                { 
+                    "ETAs": 52, "Note": "", "Supply": 17,
+                    "Action": "build_base"
+                },
+                { 
+                    "ETAs": 68, "Note": "", "Supply": 18,
+                    "Action": "build_extractor"
+                },
+                { 
+                    "ETAs": 75, "Note": "", "Supply": 17,
+                    "Action": "build_spawningPool"
+                },
+                { 
+                    "ETAs": 102, "Note": "", "Supply": 19,
+                    "Action": "spawn_overlord"
+                },
+                { 
+                    "ETAs": 126, "Note": "", "Supply": 20,
+                    "Action": "spawn_queen"
+                },
+                { 
+                    "ETAs": 127, "Note": "", "Supply": 20,
+                    "Action": "spawn_queen"
+                },
+                { 
+                    "ETAs": 128, "Note": "", "Supply": 24,
+                    "Action": "spawn_zergling"
+                },
+                { 
+                    "ETAs": 129, "Note": "", "Supply": 25,
+                    "Action": "spawn_zergling"
+                },
+                { 
+                    "ETAs": 138, "Note": "", "Supply": 28,
+                    "Action": "upgrade_metabolicBoost"
+                },
+                { 
+                    "ETAs": 168, "Note": "", "Supply": 32,
+                    "Action": "build_base"
+                },
+                { 
+                    "ETAs": 169, "Note": "", "Supply": 31,
+                    "Action": "spawn_overlord"
+                },
+                {
+                    "ETAs": 179, "Note": "", "Supply": 31,
+                    "Action": "spawn_queen"
+                },
+                {
+                    "ETAs": 243, "Note": "", "Supply": 48,
+                    "Action": "build_banelingNest"
+                },
+                {
+                    "ETAs": 251, "Note": "", "Supply": 47,
+                    "Action": "build_extractor"
+                },
+                {
+                    "ETAs": 263, "Note": "", "Supply": 47,
+                    "Action": "spawn_zergling"
+                },
+                {
+                    "ETAs": 288, "Note": "x2", "Supply": 62,
+                    "Action": "build_evolutionChamber"
+                },
+                {
+                    "ETAs": 290, "Note": "", "Supply": 62,
+                    "Action": "upgrade_Lair"
+                },
+                {
+                    "ETAs": 315, "Note": "x2, mass_zergling", "Supply": 76,
+                    "Action": "build_base"
+                },
+                {
+                    "ETAs": 356, "Note": "", "Supply": 85,
+                    "Action": "upgrade_groundArmor"
+                },
+                {
+                    "ETAs": 356, "Note": "", "Supply": 85,
+                    "Action": "upgrade_meleeWeapons"
+                },
+                {
+                    "ETAs": 358, "Note": "", "Supply": 85,
+                    "Action": "upgrade_centrifugalHooks"
+                },
+                {
+                    "ETAs": 356, "Note": "", "Supply": 85,
+                    "Action": "upgrade_groundArmor"
+                },
+                {
+                    "ETAs": 370, "Note": "", "Supply": 85,
+                    "Action": "build_base"
+                },
+                {
+                    "ETAs": 372, "Note": "", "Supply": 85,
+                    "Action": "build_base"
+                },
+                {
+                    "Directive": "change task_manager from build to adaptible directive"
+                }
+                
+            ]
+        }   
+    ]
+}
