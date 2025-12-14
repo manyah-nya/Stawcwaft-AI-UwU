@@ -1,0 +1,12 @@
+{
+    "map_dir": "C:/Program Files (x86)/StarCraft II/Maps",
+    "map_selection": "Id",
+    "map_id": 0,
+    "reports": false,
+    "debugs": true,
+    "realtime": true,
+    "enemy_race": "Random",
+    "enemy_difficulty":"Hard",
+
+    "nyarka_race": "Zerg"
+}
