@@ -1,17 +1,24 @@
-# Importing shit and stuff
-from sc2.bot_ai import BotAI
-from numpy import random
+from numpy import random # For Map class
 
+# So that stuff works
 import os
 import json
 
 
 
-
 class File:
     def load(path):
-        pass
-    #
+        try:
+            with open(path, 'r') as file:
+                data = json.load(file)
+                return data
+            
+        except FileNotFoundError:
+            print(f"Error: file {path} was not found.")
+        
+
+        file.close() # Close :3
+    #   
     #
 class Directory:
     # List file in specific directory and turn them into a file
@@ -34,54 +41,3 @@ class Map:
         else: return Map.random(map_list)
     #
     #
-class Settings():
-    # Location of settings.json --- DO NOT CHANGE!!!
-    settings_file = "./Data/Game/settings.json"
-
-    def __init__(self): self.load()
-    def load(self):
-        try:
-            with open(self.settings_file, 'r') as file:
-                data = json.load(file)
-
-            print(json.dumps(data, indent=4)) # Print settings
-
-        except FileNotFoundError:
-            print(f"Error: file {self.settings_file} was not found.")
-
-        
-        # Set the setttings:
-        self.map_list = Directory.list_files(data["map_dir"], extension="SC2Map")
-        self.map = Map.get(data["map_id"], data["map_selection"], self.map_list)
-        self.reports_active = data["reports"]
-        self.realtime_active = data["realtime"]
-        self.enemy_race = data["enemy_race"]
-        self.enemy_difficulty = data["enemy_difficulty"]
-
-        self.nyarka_race = data["nyarka_race"]
-        
-        #-------------------------------------------------#
-        file.close() 
-    #
-    #
-class Reporter():
-    def __init__(self, nya_bot:BotAI):
-        self.bot = nya_bot
-
-    # Game data
-    def game(self, iteration):
-        print(
-            f"Iteration: {iteration}\n",
-            f"Drones: {self.bot.workers.amount}, Idle Drones: {self.bot.workers.idle.amount}\n",  
-            f"Minerals: {self.bot.minerals}, Gas: {self.bot.vespene}, Supply: {self.bot.supply_used}/{self.bot.supply_cap}\n"
-            f"------------------------------------------------------------------"
-        )
-    
-
-    def ai(self, iteration):
-        print("")
-
-
-    def run(self, iteration, settings):
-        self.ai(iteration)
-        self.game(iteration)
