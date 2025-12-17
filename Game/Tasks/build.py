@@ -1,5 +1,5 @@
 from sc2.bot_ai import BotAI
 
-class Incubate:
+class Build:
     def run(nyarka:BotAI, obj):
         pass

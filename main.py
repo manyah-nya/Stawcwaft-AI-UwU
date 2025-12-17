@@ -11,10 +11,9 @@ import os
 
 
 # File importing (Relational Stuff :3)
-from Game.task_manager import TaskManager
+from Game.brain import Brain
 from Game.settings import Settings
 from Game.reporter import Reporter
-from Game.build_order import BuildOrder
 import config
 
 
@@ -25,21 +24,23 @@ settings = Settings()
 
 class Nyarka(BotAI): # NyaBot UwU kawaii :3
     def __init__(self):
-        self.task_manager = TaskManager(self)
-        self.build_order = BuildOrder(self)
+        self.brain = Brain(self)
         self.reporter = Reporter(self)
-
+        
 
     async def on_start(self):
-        pass
+        
+        self.brain.start()
 
 
     async def on_step(self, iteration:int): # is called every step/tick of the game
-        if settings.reports: self.reporter.run(iteration) # Print stats of the game
-        
-        
-        # Logic
-        pass
+        # Prints stats of the game
+        if settings.reports: self.reporter.run(iteration)
+        #
+        #
+        # LOGIC
+        # 
+        self.brain.run()
 
 
 

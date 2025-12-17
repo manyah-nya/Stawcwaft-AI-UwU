@@ -4,8 +4,8 @@
 
     "reports": true,
     "debugs": true,
-    "realtime": true,
+    "realtime": false,
 
     "enemy_race": "Random",
-    "enemy_difficulty":"Hard"
+    "enemy_difficulty":"Easy"
 }

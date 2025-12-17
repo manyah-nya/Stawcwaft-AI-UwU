@@ -17,13 +17,19 @@ class Settings():
             config.SC2_MAPS_PATH,
             extension=config.SC2_MAPS_EXTENSION
         )
+        #
+        # Check if map_list is not empty
+        if self.map_list == []:
+            raise FileNotFoundError(f"There are no maps in {config.SC2_MAPS_PATH} folder")
+        #
         # Get the specific map for the game
         self.map = Map.get(
             data["map_id"],
             data["map_selection"],
             self.map_list
         )
-        # Other Stuff
+        #
+        # Initialize other settings data
         self.reports = data["reports"] # If true AI will report in-game data and stats.
         self.realtime = data["realtime"] # If true game will be run in realtime.
         self.enemy_race = data["enemy_race"] # What's the enemy's race.

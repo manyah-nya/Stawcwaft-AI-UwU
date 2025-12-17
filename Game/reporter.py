@@ -7,16 +7,17 @@ class Reporter():
 
     # Game data
     def game(self, iteration):
-        print(
-            f"Iteration: {iteration}\n",
-            f"Drones: {self.nyarka.workers.amount}, Idle Drones: {self.nyarka.workers.idle.amount}\n",  
-            f"Minerals: {self.nyarka.minerals}, Gas: {self.nyarka.vespene}, Supply: {self.nyarka.supply_used}/{self.nyarka.supply_cap}\n"
-            f"------------------------------------------------------------------"
-        )
+        # print(
+        #     f"Iteration: {iteration}\n",
+        #     f"Drones: {self.nyarka.workers.amount}, Idle Drones: {self.nyarka.workers.idle.amount}\n",  
+        #     f"Minerals: {self.nyarka.minerals}, Gas: {self.nyarka.vespene}, Supply: {self.nyarka.supply_used}/{self.nyarka.supply_cap}\n"
+        #     f"------------------------------------------------------------------"
+        # )
+        pass
     
 
     def ai(self, iteration):
-        print("")
+        pass
 
 
     def run(self, iteration):

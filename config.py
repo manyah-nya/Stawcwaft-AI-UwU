@@ -14,3 +14,5 @@ SC2_MAPS_EXTENSION = "SC2Map"
 #
 # Bot Config
 NYARKA_RACE = "Zerg"
+#
+# 

@@ -34,8 +34,14 @@ class Directory:
     #
     #
 class Map:
-    def random(map_list): return map_list[random.randint(0, len(map_list))]
-    def proper_id(id, map_length): return (0 <= id < map_length)
+    #
+    def random(map_list):
+        return map_list[random.randint(0, len(map_list))]
+    #
+    def proper_id(id, map_length): 
+        return (0 <= id < map_length)
+    #
+    #
     def get(id, selection, map_list):
         if Map.proper_id(id, len(map_list)) and selection == "Id": return map_list[id]
         else: return Map.random(map_list)

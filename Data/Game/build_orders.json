@@ -1,120 +1,199 @@
 {
-    "NvP": {
+    "Protoss": {
 
     },
-    "NvT": {
+    "Terran": {
 
     },
-    "NvZ": {
+    "Zerg": {
 
     },
-    "NvR": [
+    "Random": [
         {
-            "Title": "PIG Ling/Bane 2023.",
-            "Description": "Build viable against any race.",
-            "Build": [
+            "title": "PIG Ling/Bane 2023.",
+            "description": "Build viable against any race.",
+            "steps": [
                 { 
-                    "ETAs": 13, "Note": "", "Supply": 13,
-                    "Action": "spawn_overlord"
-                },
-                { 
-                    "ETAs": 52, "Note": "", "Supply": 17,
-                    "Action": "build_base"
-                },
-                { 
-                    "ETAs": 68, "Note": "", "Supply": 18,
-                    "Action": "build_extractor"
+                    "eta": 13, "note": "", "supply": 13,
+                    "directive": {
+                        "task": "larva",
+                        "obj": "overlord"
+                    }
                 },
                 { 
-                    "ETAs": 75, "Note": "", "Supply": 17,
-                    "Action": "build_spawningPool"
+                    "eta": 52, "note": "", "supply": 17,
+                    "directive": {
+                        "task": "build",
+                        "obj": "base"
+                    }
                 },
                 { 
-                    "ETAs": 102, "Note": "", "Supply": 19,
-                    "Action": "spawn_overlord"
+                    "eta": 68, "note": "", "supply": 18,
+                    "directive": {
+                        "task": "build",
+                        "obj": "extractor"
+                    }
                 },
                 { 
-                    "ETAs": 126, "Note": "", "Supply": 20,
-                    "Action": "spawn_queen"
+                    "eta": 75, "note": "", "supply": 17,
+                    "directive": {
+                        "task": "build",
+                        "obj": "spawning_pool"
+                    }
                 },
                 { 
-                    "ETAs": 127, "Note": "", "Supply": 20,
-                    "Action": "spawn_queen"
+                    "eta": 102, "note": "", "supply": 19,
+                    "directive": {
+                        "task": "spawn",
+                        "obj": "overlord"
+                    }
                 },
                 { 
-                    "ETAs": 128, "Note": "", "Supply": 24,
-                    "Action": "spawn_zergling"
+                    "eta": 126, "note": "", "supply": 20,
+                    "directive": {
+                        "task": "spawn",
+                        "obj": "queen"
+                    }                  
                 },
                 { 
-                    "ETAs": 129, "Note": "", "Supply": 25,
-                    "Action": "spawn_zergling"
+                    "eta": 127, "note": "", "supply": 20,
+                    "directive": {
+                        "task": "spawn",
+                        "obj": "queen"
+                    }                  
                 },
                 { 
-                    "ETAs": 138, "Note": "", "Supply": 28,
-                    "Action": "upgrade_metabolicBoost"
+                    "eta": 128, "note": "", "supply": 24,
+                    "directive": {
+                        "task": "spawn",
+                        "obj": "zergling"
+                    }
                 },
                 { 
-                    "ETAs": 168, "Note": "", "Supply": 32,
-                    "Action": "build_base"
+                    "eta": 129, "note": "", "supply": 25,
+                    "directive": {
+                        "task": "spawn",
+                        "obj": "zergling"
+                    }
                 },
                 { 
-                    "ETAs": 169, "Note": "", "Supply": 31,
-                    "Action": "spawn_overlord"
+                    "eta": 138, "note": "", "supply": 28,
+                    "directive": {
+                        "task": "upgrade",
+                        "obj": "metabolic_boost"
+                    }
+                },
+                { 
+                    "eta": 168, "note": "", "supply": 32,
+                    "directive": {
+                        "task": "build",
+                        "obj": "base"
+                    }                 
+                },
+                { 
+                    "eta": 169, "note": "", "supply": 31,
+                    "directive": {
+                        "task": "spawn",
+                        "obj": "overlord"
+                    }
                 },
                 {
-                    "ETAs": 179, "Note": "", "Supply": 31,
-                    "Action": "spawn_queen"
+                    "eta": 179, "note": "", "supply": 31,
+                    "directive": {
+                        "task": "spawn",
+                        "obj": "queen"
+                    }                  
                 },
                 {
-                    "ETAs": 243, "Note": "", "Supply": 48,
-                    "Action": "build_banelingNest"
+                    "eta": 243, "note": "", "supply": 48,
+                    "directive": {
+                        "task": "build",
+                        "obj": "baneling_nest"
+                    }
                 },
                 {
-                    "ETAs": 251, "Note": "", "Supply": 47,
-                    "Action": "build_extractor"
+                    "eta": 251, "note": "", "supply": 47,
+                    "directive": {
+                        "task": "build",
+                        "obj": "extractor"
+                    }
                 },
                 {
-                    "ETAs": 263, "Note": "", "Supply": 47,
-                    "Action": "spawn_zergling"
+                    "eta": 263, "note": "", "supply": 47,
+                    "directive": {
+                        "task": "spawn",
+                        "obj": "zergling"
+                    }
                 },
                 {
-                    "ETAs": 288, "Note": "x2", "Supply": 62,
-                    "Action": "build_evolutionChamber"
+                    "eta": 288, "note": "x2", "supply": 62,
+                    "directive": {
+                        "task": "build",
+                        "obj": "evolution_chamber"
+                    }
                 },
                 {
-                    "ETAs": 290, "Note": "", "Supply": 62,
-                    "Action": "upgrade_Lair"
+                    "eta": 290, "note": "", "supply": 62,
+                    "directive": {
+                        "task": "upgrade",
+                        "obj": "Lair"
+                    }                   
                 },
                 {
-                    "ETAs": 315, "Note": "x2, mass_zergling", "Supply": 76,
-                    "Action": "build_base"
+                    "eta": 315, "note": "x2, mass_zergling", "supply": 76,
+                    "directive": {
+                        "task": "build",
+                        "obj": "base"
+                    }                 
                 },
                 {
-                    "ETAs": 356, "Note": "", "Supply": 85,
-                    "Action": "upgrade_groundArmor"
+                    "eta": 356, "note": "", "supply": 85,
+                    "directive": {
+                        "task": "upgrade",
+                        "obj": "ground_armor"
+                    }
                 },
                 {
-                    "ETAs": 356, "Note": "", "Supply": 85,
-                    "Action": "upgrade_meleeWeapons"
+                    "eta": 356, "note": "", "supply": 85,
+                    "directive": {
+                        "task": "upgrade",
+                        "obj": "melee_weapons"
+                    }
                 },
                 {
-                    "ETAs": 358, "Note": "", "Supply": 85,
-                    "Action": "upgrade_centrifugalHooks"
+                    "eta": 358, "note": "", "supply": 85,
+                    "directive": {
+                        "task": "upgrade",
+                        "obj": "centrifugal_hooks"
+                    }
                 },
                 {
-                    "ETAs": 356, "Note": "", "Supply": 85,
-                    "Action": "upgrade_groundArmor"
+                    "eta": 356, "note": "", "supply": 85,
+                    "directive": {
+                        "task": "upgrade",
+                        "obj": "ground_armor"
+                    }
                 },
                 {
-                    "ETAs": 370, "Note": "", "Supply": 85,
-                    "Action": "build_base"
+                    "eta": 370, "note": "", "supply": 85,
+                    "directive": {
+                        "task": "build",
+                        "obj": "base"
+                    }                 
                 },
                 {
-                    "ETAs": 372, "Note": "", "Supply": 85,
-                    "Action": "build_base"
+                    "eta": 372, "note": "", "supply": 85,
+                    "directive": {
+                        "task": "build",
+                        "obj": "base"
+                    }                 
                 },
                 {
-                    "Directive": "change task_manager from build to adaptible directive"
+                    "eta": 372, "note": "", "supply": 85,
+                    "directive": {
+                        "task": "end",
+                        "obj": "completed"
+                    }
                 }
                 
             ]
