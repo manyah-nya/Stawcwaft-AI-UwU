@@ -3,6 +3,7 @@
     "map_id": 0,
 
     "reports": true,
+    "reports_i": 100,
     "debugs": true,
     "realtime": false,
 

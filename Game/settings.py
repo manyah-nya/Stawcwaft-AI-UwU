@@ -31,6 +31,7 @@ class Settings():
         #
         # Initialize other settings data
         self.reports = data["reports"] # If true AI will report in-game data and stats.
+        self.reports_i = data["reports_i"] # If iteration is dividable by this number then report 
         self.realtime = data["realtime"] # If true game will be run in realtime.
         self.enemy_race = data["enemy_race"] # What's the enemy's race.
         self.enemy_difficulty = data["enemy_difficulty"] # Enemy's difficulty

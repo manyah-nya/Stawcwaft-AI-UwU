@@ -24,23 +24,24 @@ settings = Settings()
 
 class Nyarka(BotAI): # NyaBot UwU kawaii :3
     def __init__(self):
-        self.brain = Brain(self)
+        self.brain:Brain = Brain(self)
         self.reporter = Reporter(self)
+
+        # Get those settings in :3
+        self.settings = settings
         
 
     async def on_start(self):
-        
         self.brain.start()
 
 
     async def on_step(self, iteration:int): # is called every step/tick of the game
-        # Prints stats of the game
-        if settings.reports: self.reporter.run(iteration)
-        #
-        #
         # LOGIC
-        # 
+        #
         self.brain.run()
+        #
+        # REPORTING
+        if settings.reports and iteration % self.settings.reports_i == 0: self.reporter.run(iteration)
 
 
 

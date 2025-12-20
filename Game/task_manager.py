@@ -23,6 +23,9 @@ class TaskManager():
 
 
     def run(self, action_dir):
-        self.task_dict[action_dir["task"]].run(self.nyarka, action_dir["obj"])
-        pass
+        # Code for runnig action through the build order
+        completed = self.task_dict[action_dir["task"]].run(self.nyarka, action_dir["obj"]) # Completion check
+        #
+        # Return result of performing task
+        return completed
     
